@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 91c1acc3af8b6924199b7b97f0023a61
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gotham TR
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 312a905e21f056f4eae61d00b16e5f97, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

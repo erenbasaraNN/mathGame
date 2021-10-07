@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 6f4160527b48f9648a896a41deb32400
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gotham TR
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 59f80fdfab76bdc4a9d8917bd1b24e25, type: 3}
+  - {fileID: 12800000, guid: a835bebd28990774e887ffd8e996551f, type: 3}
+  - {fileID: 12800000, guid: 4f4f52f69f180864ea9f623a12e6ac45, type: 3}
+  - {fileID: 12800000, guid: 87c7b8319738cc4498dc0bad2a87a91a, type: 3}
+  - {fileID: 12800000, guid: 680cb1e24c5e18e4684a95dbfded889e, type: 3}
+  - {fileID: 12800000, guid: c96d715b000a23d47b4303c190ce9d22, type: 3}
+  - {fileID: 12800000, guid: 91c1acc3af8b6924199b7b97f0023a61, type: 3}
+  - {fileID: 12800000, guid: 92280f890ce63ed4cb1e0a665f3657e4, type: 3}
+  - {fileID: 12800000, guid: bcb142cfe5551db4fa46f1732150a6af, type: 3}
+  - {fileID: 12800000, guid: f9cba318c552eca48ba310028fd6a8cf, type: 3}
+  - {fileID: 12800000, guid: 312a905e21f056f4eae61d00b16e5f97, type: 3}
+  - {fileID: 12800000, guid: cb134305d8560294c90bb40c0d2d129e, type: 3}
+  - {fileID: 12800000, guid: 42502dad9f13cdc49b7d69445a6cc1a1, type: 3}
+  - {fileID: 12800000, guid: 343e29add9eb23249bb7eabd60cdd53f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

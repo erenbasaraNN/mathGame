@@ -5,13 +5,13 @@ using UnityEngine;
 public class mathGame : MonoBehaviour
 {
     public UnityEngine.UI.Text firstNumber, secondNumber, symbol, equal, answer, status;
-    int number1, number2, symbolSign;
+    int number1, number2, symbolSign, math;
     int procAnswer;
+    int randomNumberRange = 10;
     public UnityEngine.UI.InputField answerInput;
     void Start()
     {
         newQuestion();
-
     }
 
 
@@ -21,23 +21,27 @@ public class mathGame : MonoBehaviour
         {
 
             status.color = new Color32(24, 173, 64, 255);
-            status.text = "CORRECT";
+            status.text = "BRAVO !";
         }
         else
         {
-            status.color = Color.red;
-            status.text = "FALSE";
+            status.color = Color.yellow;
+            status.text = "Daha iyisini yapabilirsin";
         }
     }
     public void newQuestion()
     {
-
-
         answerInput.text = "";
         status.text = "";
-        number1 = Random.Range(1, 10);
-        number2 = Random.Range(1, 10);
-        symbolSign = Random.Range(1, 4);
+        number1 = Random.Range(0, randomNumberRange);
+        number2 = Random.Range(0, randomNumberRange);
+
+        if (math == 0)
+            symbolSign = Random.Range(1, 4);
+        else
+            symbolSign = math;
+
+
         switch (symbolSign)
         {
             case 1:
@@ -46,18 +50,50 @@ public class mathGame : MonoBehaviour
                 break;
             case 2:
                 symbol.text = "-";
-                procAnswer = number1 - number2;
-                break;
+                if (number1 > number2)
+                {
+                    procAnswer = number1 - number2;
+                    break;
+                }
+                else
+                {
+                    procAnswer = number2 - number1;
+                    break;
+                }
             case 3:
-                symbol.text = "*";
+                symbol.text = "X";
                 procAnswer = number1 * number2;
                 break;
-            case 4:
-                symbol.text = "/";
-                procAnswer = number1 / number2;
+        }
+        if (number1 > number2)
+        {
+            firstNumber.text = number1 + "";
+            secondNumber.text = number2 + "";
+        }
+        else
+        {
+            firstNumber.text = number2 + "";
+            secondNumber.text = number1 + "";
+        }
+    }
+    public void RandomNumber(int number)
+    {
+        switch (number)
+        {
+            case 0:
+                randomNumberRange = 10;
+                break;
+            case 1:
+                randomNumberRange = 50;
+                break;
+            case 2:
+                randomNumberRange = 100;
                 break;
         }
-        firstNumber.text = number1 + "";
-        secondNumber.text = number2 + "";
+    }
+
+    public void RandomMath(int number)
+    {
+        math = number;
     }
 }
